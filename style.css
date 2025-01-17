@@ -1,6 +1,6 @@
 
 * {
-    outline: 1px solid red;
+    outline: 1px solid black;
 }
 html,
 body {
@@ -104,36 +104,140 @@ img {
     pointer-events: none;
     opacity: .8;
 }
-/* Default styles (web or large screens) */
+.s-intro__bg {
+    background-image: url('images/1920×1080.jpg');
+}
+.extra-image {
+    display: none;
+}
 
-/* iPad Horizontal (landscape) */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+/* Tablet Portrait (768×1024) */
+@media (max-width: 1600px) {
     .s-intro__bg {
-        background-image: url(images/bg-ipad-horizontal.jpg);
-        /* iPad horizontal image */
+        background-image: url('images/1024×1279.jpg');
+        background-position: center bottom;
+    }
+}
+/* Tablet Portrait (768×1024) */
+@media (max-width: 1368px) {
+    .s-intro__bg {
+        background-image: url('images/1024×1279.jpg');
+        
+    }
+}
+@media (max-width: 1368px) and (max-height: 912px) {
+    .s-intro__bg {
+        background-image: url('images/1024×768.jpg');
+        background-position: center calc(100% + 35px);
+    }
+}
+@media (max-width: 1280px) and (max-height: 800px) {
+    .s-intro__bg {
+        background-image: url('images/1024×1279.jpg');
+        background-position: center calc(100% + 35px);
+    }
+         
+}
+
+@media (max-width: 1024px) {
+    .s-intro__bg {
+        background-image: url('images/1024×768.jpg');
+        background-position: center center;
+    }
+}
+@media (max-height: 1366px) and (max-width: 1024px) {
+    .s-intro__bg {
+        background-image: url('images/768×1024.jpg');
+        background-position: center center;
     }
 }
 
-/* iPad Vertical (portrait) */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+@media (max-height: 786px) and (max-width: 1024px) {
     .s-intro__bg {
-        background-image: url(images/bg-ipad-vertical.jpg);
-        /* iPad vertical image */
+        background-image: url('images/1280×1024.jpg');
+        background-position: center center;
+    }
+}
+@media (max-height: 600px) and (max-width: 1024px) {
+    .s-intro__bg {
+        background-image: url('images/1920×1080.jpg');
+        background-position: center;
+    }
+}
+@media (max-height: 1280px) and (max-width: 853px) {
+    .s-intro__bg {
+        background-image: url('images/601×962.jpg');
+        background-position: center center;
     }
 }
 
-/* iPhone (smaller devices) */
-@media (max-width: 767px) {
+@media (max-width: 912px) and (max-height: 1368px) {
     .s-intro__bg {
-        background-image: url(images/bg-iphone.jpg);
-        /* iPhone image */
+        background-image: url('images/601×962.jpg');
+        background-position: center center;
+    }
+}
+@media (max-width: 820px) and (max-height: 1180px) {
+    .s-intro__bg {
+        background-image: url('images/768×1024.jpg');
+        background-position: center ;
+    }
+}
+/* Tablet Landscape (1024×768) */
+@media (max-width: 768px) {
+    .s-intro__bg {
+        background-image: url('images/768×1024.jpg');
+        background-position: center center;
+     
+    }
+}
+/* Tablet Landscape (1024×768) */
+@media (max-width: 721px) {
+    .s-intro__bg {
+        background-image: url('images/1280×1024.jpg');
+        background-position: center center;
+     
+    }
+}
+@media (max-width: 540px) and (max-height: 720px) {
+    .s-intro__bg {
+        background-image: url('images/768×1024.jpg');
+        background-position: center;
     }
 }
 
-/* Mac (large desktops) */
-@media (min-width: 1280px) {
+/* Mobile (375×667) */
+@media (max-width: 479px) {
     .s-intro__bg {
-        background-image: url(images/bg-mac.jpg);
-        /* Mac image */
+        background-image: url('images/390×844.jpg');
+        background-position: center center;
     }
+}
+
+@media (max-height: 667px) and (max-width: 375px) {
+    .s-intro__bg {
+        background-image: url('images/375×667.jpg');
+        background-position: center center;
+    }
+}
+/* Mobile (375×667) */
+@media (max-width: 345px) {
+    .s-intro__bg {
+        background-image: url('images/360×800.jpg');
+        background-position: center center;
+    }
+}
+@media (width: 1280px) and (height: 800px) {
+.extra-image {
+        display: block;
+        outline: none;
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        max-width: 300px;
+    }
+         
 }
