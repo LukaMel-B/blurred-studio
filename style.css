@@ -211,21 +211,21 @@ img {
 @media (max-width: 479px) {
     .s-intro__bg {
         background-image: url('images/390×844.jpg');
-        background-position: center center;
+        background-position: center bottom;
     }
 }
 
 @media (max-height: 667px) and (max-width: 375px) {
     .s-intro__bg {
         background-image: url('images/375×667.jpg');
-        background-position: center center;
+        background-position: center bottom;
     }
 }
 /* Mobile (375×667) */
 @media (max-width: 345px) {
     .s-intro__bg {
         background-image: url('images/360×800.jpg');
-        background-position: center center;
+        background-position: center bottom;
     }
 }
 @media (width: 1280px) and (height: 800px) {
