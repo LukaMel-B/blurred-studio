@@ -69,7 +69,7 @@ img {
     background-image: url(images/bg-large.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     /* Ensure the image scales to cover the viewport */
 }
 
